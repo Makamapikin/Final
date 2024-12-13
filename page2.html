@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Plans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meal Plans</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition Basics</a></li>
+        <li><a href="meal-plans.html">Meal Plans</a></li>
+        <li><a href="recipes.html">Healthy Recipes</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content-box">
+    <h2>Choose Your Meal Plan</h2>
+    <p>Select a meal plan tailored to your specific goals.</p>
+
+    <!-- Vegan Foods Option -->
+    <div class="meal-option">
+      <h3>Vegan Foods</h3>
+      <div class="meal-card">
+        <img src="vegan.jpg" alt="Vegan Foods" class="meal-image">
+        <p>Explore delicious plant-based meals that are healthy and satisfying.</p>
+        <button onclick="showMealPlan('vegan')">View Meal Plan</button>
+      </div>
+    </div>
+
+    <!-- Skin-Targeted Foods Option -->
+    <div class="meal-option">
+      <h3>Skin-Targeted Foods</h3>
+      <div class="meal-card">
+        <img src="skin.jpg" alt="Skin-Targeted Foods" class="meal-image">
+        <p>These foods are rich in vitamins and antioxidants to promote glowing skin.</p>
+        <button onclick="showMealPlan('skin')">View Meal Plan</button>
+      </div>
+    </div>
+
+    <!-- Body-Building Foods Option -->
+    <div class="meal-option">
+      <h3>Body-Building Foods</h3>
+      <div class="meal-card">
+        <img src="bodybuilding.jpg" alt="Body-Building Foods" class="meal-image">
+        <p>Protein-packed meals to help build muscle and improve strength.</p>
+        <button onclick="showMealPlan('bodybuilding')">View Meal Plan</button>
+      </div>
+    </div>
+
+    <!-- Meal Plan Details -->
+    <div id="vegan-meal-plan" class="meal-plan-details" style="display: none;">
+      <h3>Vegan Meal Plan</h3>
+      <ul>
+        <li>Quinoa Salad - Rich in protein and nutrients.</li>
+        <li>Chickpea Curry - Packed with flavor and protein.</li>
+        <li>Tofu Stir Fry - A healthy and delicious plant-based option.</li>
+        <li>Oatmeal with Fruits - A fiber-rich breakfast.</li>
+        <li>Mixed Vegetable Soup - Full of vitamins and minerals.</li>
+      </ul>
+    </div>
+
+    <div id="skin-meal-plan" class="meal-plan-details" style="display: none;">
+      <h3>Skin-Targeted Meal Plan</h3>
+      <ul>
+        <li>Avocados - High in healthy fats and vitamin E.</li>
+        <li>Carrots - Rich in beta-carotene, great for skin health.</li>
+        <li>Salmon - Full of omega-3 fatty acids.</li>
+        <li>Spinach - Packed with vitamins A and C.</li>
+        <li>Blueberries - Loaded with antioxidants.</li>
+      </ul>
+    </div>
+
+    <div id="bodybuilding-meal-plan" class="meal-plan-details" style="display: none;">
+      <h3>Body-Building Meal Plan</h3>
+      <ul>
+        <li>Grilled Chicken Breast - A lean source of protein.</li>
+        <li>Brown Rice - Complex carbs for sustained energy.</li>
+        <li>Egg Whites - A quick protein boost.</li>
+        <li>Greek Yogurt - High in protein and calcium.</li>
+        <li>Broccoli - Packed with nutrients and low in calories.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Healthy Eating. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showMealPlan(plan) {
+      // Hide all meal plans
+      const mealPlans = document.querySelectorAll('.meal-plan-details');
+      mealPlans.forEach(plan => plan.style.display = 'none');
+
+      // Show the selected meal plan
+      const selectedPlan = document.getElementById(`${plan}-meal-plan`);
+      if (selectedPlan) {
+        selectedPlan.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

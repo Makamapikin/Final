@@ -1,0 +1,130 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+  }
+  
+  /* Content Box Styling */
+  .content-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content-box h2 {
+    text-align: center;
+  }
+  
+  .content-box p {
+    text-align: justify;
+  }
+  
+  /* Meal Option Styling - Compact Design */
+  .meal-option {
+    margin-top: 10px;
+  }
+  
+  .meal-card {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Light background */
+    padding: 10px; /* Reduced padding for compactness */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 10px auto; /* Smaller margin for spacing */
+    max-width: 400px; /* Reduced width for a compact layout */
+  }
+  
+  .meal-image {
+    width: 100%;
+    max-width: 200px; /* Smaller image size */
+    border-radius: 5px; /* Rounded image corners */
+    margin-bottom: 10px;
+  }
+  
+  .meal-card h3 {
+    font-size: 1.2rem; /* Smaller font size for headings */
+    margin-bottom: 8px;
+  }
+  
+  .meal-card p {
+    font-size: 0.9rem; /* Reduced font size for description */
+    margin-bottom: 8px;
+  }
+  
+  .meal-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Compact button size */
+    font-size: 0.9rem; /* Smaller font size */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meal-card button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+  }
+  
+  /* Meal Plan Details Styling */
+  .meal-plan-details {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
